@@ -11,7 +11,11 @@ class Artist
     @genres << song.genre
     @genres.uniq
   end
-
+  
+  def songs
+    @songs
+  end
+  
   def genres
     @genres
   end
