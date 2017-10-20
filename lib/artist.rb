@@ -11,12 +11,16 @@ class Artist
     @genres << song.genre
     @genres.uniq
   end
-  
+
   def songs
     @songs
   end
-  
+
   def genres
-    @genres
+    genres = []
+    @songs.each do |song|
+      genres << song.genre
+    end
+    genres.uniq
   end
 end
