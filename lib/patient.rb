@@ -5,4 +5,8 @@ class Pantient
   end
 
   def add_appointment(appointment)
+  end
+
+  def doctors
+  end
 end
